@@ -157,21 +157,27 @@ const sendEmail = (e) => {
 contactForm.addEventListener('submit', sendEmail);
 
 
-const text = document.querySelector(".section__title");
+const typingTextElements = document.querySelectorAll('.typing-text');
 
-const textLoad = () => {
-  setTimeout(() => {
-    text.textContent = "About Me";
-  }, 0);
-  setTimeout(() => {
-    text.textContent = "About Shin";
-  }, 2000);
-  setTimeout(() => {
-    text.textContent = "About ShinayLim";
-  }, 4000); //1s = 1000 milliseconds
-}
+typingTextElements.forEach((element) => {
+  const text = element.textContent;
+  element.textContent = ''; // clear the text content
+  let charIndex = 0;
 
-textLoad();
-setInterval(textLoad, 12000);
+  function type() {
+    element.textContent += text[charIndex]; // add one character at a time
+    charIndex++;
 
+    if (charIndex < text.length) {
+      setTimeout(type, 100); // call the function again after 50ms
+    } else {
+      setTimeout(() => {
+        element.textContent = ''; // clear the text content after typing is complete
+        charIndex = 0; // reset the char index
+        type(); // start typing again
+      }, 5000); // wait for 2000ms before starting again
+    }
+  }
 
+  type(); // start the typing animation
+});
