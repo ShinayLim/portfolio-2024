@@ -181,3 +181,10 @@ typingTextElements.forEach((element) => {
 
   type(); // start the typing animation
 });
+
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  setTimeout(function() {
+    preloader.style.display = "none";
+  }, 10000); // 10000 milliseconds = 10 seconds
+});
