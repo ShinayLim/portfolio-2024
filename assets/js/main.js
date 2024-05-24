@@ -186,5 +186,5 @@ window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
   setTimeout(function() {
     preloader.style.display = "none";
-  }, 3000); // 10000 milliseconds = 10 seconds
+  }, 4000); // 10000 milliseconds = 10 seconds
 });
