@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: --first-color;
+}
+.color-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+  background-color:  --first-color;
+}
+svg {
+  fill: #ffffff;
+}
+.options {
+  padding: 1em 0;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: --first-color;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.5em;
+}
+label {
+  margin-right: 0.5em;
+}
+#color-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+#color-input::-webkit-color-swatch {
+  border: 3px solid #000000;
+  border-radius: 5px;
+}
+#color-input::-moz-color-swatch {
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+.color-options,
+.size {
+  display: flex;
+  align-items: center;
+}
+
+.download_cv {
+  display: block;
+  cursor: pointer;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 4px;
+  isolation: isolate;
+}
+
+.download_cv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+  animation-play-state: paused;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.download_cv:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.download_cv span {
+  position: relative;
+  display: block;
+  padding: 10px;
+  background: #000;
+  border-radius: 3px;
+  height: 100%;
+  color: white;
+}
