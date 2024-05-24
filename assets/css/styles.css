@@ -3,28 +3,28 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 6rem;
+  --header-height: 5rem;
 
   /*========== Colors ==========*/
   /* Color mode HSL(hue, saturation, lightness) */
   --first-color: hsl(288, 29%, 43%);
-  --title-color: hsl(0, 0%, 100%);
-  --text-color: hsl(0, 0%, 77%);
-  --body-color: hsl(0, 0%, 6%);
-  --container-color: hsl(0, 0%, 10%);
-  --border-color: hsla(0, 0%, 100%, 0.473);
+  --title-color: hsl(0, 0%, 0%);
+  --text-color: hsl(0, 0%, 0%);
+  --body-color: #DBD6D8;
+  --container-color: #EFE2E7;
+  --border-color: hsla(0, 0%, 0%, 0.473);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
   --second-font: 'Montserrat', sans-serif;
 
-  --big-font-size: clamp(2rem, 0.9706rem + 4.7059vw, 4.5rem);
-  --h1-font-size: clamp(1.75rem, 0.9265rem + 3.7647vw, 3.75rem);
+  --big-font-size: 4.5rem;
+  --h1-font-size: 3rem;
   --h2-font-size: 1.75rem;
   --h3-font-size: 1.5rem;
-  --normal-font-size: 1.125rem;
-  --small-font-size: 1rem;
+  --normal-font-size: 15px;
+  --small-font-size: 15px;
   --smaller-font-size: 0.875rem;
 
   /*========== Font weight ==========*/
@@ -249,7 +249,7 @@ input {
 .scroll-header {
   position: fixed;
   backdrop-filter: blur(10px);
-  background-color: hsla(0, 0%, 10%, 0.863);
+  background-color: #EFE2E7;
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
   animation: slide-down 0.7s;
 }
@@ -288,7 +288,7 @@ input {
 
 .home__title {
   font-family: var(--second-font);
-  font-size: var(--big-font-size);
+  font-size: 2rem;
   font-weight: var(--weight-500);
 }
 
@@ -420,6 +420,7 @@ input {
   cursor: pointer;
   border-radius: var(--radius);
   overflow: hidden;
+  max-height: 15rem;
 }
 
 .portfolio__item::after,
@@ -461,7 +462,7 @@ input {
 
 .portfolio__title {
   color: rgb(255, 255, 255);
-  font-size: var(--h2-font-size);
+  font-size: var(--normal-font-size);
   font-weight: var(--weight-600);
   margin-bottom: 0.75rem;
 }
@@ -846,6 +847,7 @@ input {
 
 .home__content {
   position: relative;
+  margin-left: 80px;
 }
 
 .home__content > .moon {

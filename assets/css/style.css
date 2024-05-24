@@ -5,15 +5,13 @@
 body {
   background-color: --first-color;
 }
-.color-container {
-  max-width: 1200px;
+.color-container img {
+  max-width: 25rem;
   margin-inline: auto;
   padding-inline: 0.75rem;
   background-color:  --first-color;
 }
-svg {
-  fill: #ffffff;
-}
+
 .options {
   padding: 1em 0;
   margin-top: 1em;
@@ -100,3 +98,4 @@ label {
   height: 100%;
   color: white;
 }
+
