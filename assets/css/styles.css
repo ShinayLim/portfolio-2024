@@ -510,6 +510,10 @@ input {
   column-gap: 4rem;
 }
 
+.about__container img {
+  position: sticky;
+}
+
 .about__img {
   max-width: 90%;
   border-radius: var(--radius);
@@ -1651,4 +1655,8 @@ ul {
 .example-2 .icon-content a[data-social="youtube"] .filled,
 .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
   background-color: #ff0000;
+}
+
+a {
+  color: white;
 }
