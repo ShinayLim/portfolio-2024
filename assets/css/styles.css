@@ -789,7 +789,7 @@ input {
 .portfolio__item::after {
   content: '';
   inset: 0;
-  background: linear-gradient(180deg, transparent, rgb(151 95 255 / 43%));
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.801));
   opacity: 0;
 }
 
